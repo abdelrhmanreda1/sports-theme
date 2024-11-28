@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity - Calories Burned By Heart Rate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700|Raleway:400,500,600,700,800|Lato:400,700,900" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></div>
+    </div>
+    <!--  end Preloader -->
+
+    <div id="main-wrapper">
+      <header>
+        <div id="logo" data-retina="true">
+          <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <a id="menu-button-mobile" href="#"><i class="icon-menu-1"></i></a>
+
+          <nav class="menu_container">
+            <ul class="menu">
+              <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+              <li><a href="about.html" data-en="About" data-ar="معلومات عنا">About</a></li>
+              <li><a href="programs.html" data-en="Programs" data-ar="البرامج">Programs</a></li>
+              <li><a href="pricing.html" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+              <li><a href="blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+              <li><a href="contacts.html" data-en="Contacts" data-ar="اتصل بنا">Contacts</a></li>
+              <li>
+                <select class="language" id="language-switcher">
+                  <option class="language-option" value="en" data-en="English" data-ar="الإنجليزية">English</option>
+                  <option class="language-option" value="ar" data-en="Arabic" data-ar="العربية">Arabic</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="header_shadow"></div>
+      </header>
+
+      <div class="row" id="row-main">
+        <div class="col-lg-6 col-md-5" id="main-img-container">
+          <div id="main-img">
+            <img src="img/01.jpg" alt="" />
+          </div>
+          <!-- End main-img -->
+        </div>
+        <!-- End main-img-container -->
+
+        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <div class="row" id="content-row">
+            <div class="col-md-12">
+              <h1 data-en="Calories Burned By Heart Rate" data-ar="السعرات الحرارية المحروقة بناءً على معدل ضربات القلب">Calories Burned By Heart Rate</h1>
+              <p class="lead" data-en="Burning more calories becomes easier with a better knowledge of the connection between the heart rate and the metabolism." data-ar="حرق المزيد من السعرات الحرارية يصبح أسهل مع فهم أفضل للعلاقة بين معدل ضربات القلب والتمثيل الغذائي.">Burning more calories becomes easier with a better knowledge of the connection between the heart rate and the metabolism.</p>
+              <p data-en="Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS." data-ar="وصف إضافي يوضح التفاصيل المتعلقة بالعلاقة بين معدل ضربات القلب والسعرات الحرارية المحروقة.">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident...</p>
+              <hr class="add_bottom_30" />
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Age" placeholder="Age (Years)" data-en="Age (Years)" data-ar="العمر (بالسنوات)" />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Weight" placeholder="Weight" data-en="Weight" data-ar="الوزن" />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="weight_select">
+                          <option value="kilo" data-en="By Kilo (KG)" data-ar="بالكيلوجرام">By Kilo (KG)</option>
+                          <option value="pounds" data-en="By Pounds" data-ar="بالرطل">By Pounds</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group add_top">
+                      <input type="radio" value="Male" name="Male" id="Male" />
+                      <label for="Male" style="margin-right: 30px" data-en="Male" data-ar="ذكر"><span></span>Male</label>
+                      <input type="radio" value="Female" name="Female" id="Female" />
+                      <label for="Female" data-en="Female" data-ar="أنثى"><span></span>Female</label>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="heartrate" placeholder="Heart Rate BPM" data-en="Heart Rate BPM" data-ar="معدل ضربات القلب (نبض/دقيقة)" />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="duration" placeholder="Duration in minutes" data-en="Duration in minutes" data-ar="المدة بالدقائق" />
+                    </div>
+                    <input type="hidden" name="calculator" value="adv_calculator" />
+                  </form>
+                  <button id="selectBtn" class="button_medium add_top" data-en="Calculate" data-ar="احسب">Calculate</button>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="result">
+                    <h3 data-en="Result for calorie burned" data-ar="النتائج للسعرات الحرارية المحروقة">Result for calorie burned</h3>
+                    <div id="adv_calculator_value">0</div>
+                  </div>
+                </div>
+              </div>
+              <!-- End row -->
+
+              <hr />
+
+              <h3 data-en="Your block lists" data-ar="قوائم الحظر الخاصة بك">Your block lists</h3>
+              <p data-en="Description about the block lists..." data-ar="وصف عن قوائم الحظر...">Cu affert populo neglegentur...</p>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_1">
+                    <li><a href="#" data-en="Item 1" data-ar="البند 1">Ceteros mediocritatem</a></li>
+                    <li><a href="#" data-en="Item 2" data-ar="البند 2">Labore nostrum</a></li>
+                    <li><a href="#" data-en="Item 3" data-ar="البند 3">Primis bonorum</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_2">
+                    <li><a href="#" data-en="Item 4" data-ar="البند 4">Electram instructior</a></li>
+                    <li><a href="#" data-en="Item 5" data-ar="البند 5">Electram</a></li>
+                    <li><a href="#" data-en="Item 6" data-ar="البند 6">Melius eruditi</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End row -->
+
+              <footer>
+                <div class="copyright">
+                  <span> &copy; R Arm CRM system powered by</span>
+                  <a href="https://rarm-crm.com" target="_blank" rel="noopener noreferrer">R Arm CRM</a>
+                  <span> and </span>
+                  <a href="https://xpassionagency.com" target="_blank" rel="noopener noreferrer">Xpassion Advertising Agency</a>
+                </div>
+              </footer>
+              <!-- End footer -->
+            </div>
+            <!-- End col-md-12 -->
+          </div>
+          <!-- End content-row -->
+        </div>
+
+        <!-- End col-lg-6-->
+      </div>
+      <!-- End main-row -->
+    </div>
+    <!-- End main-wrapper  -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="js/calories_calculators.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina-replace.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/transilation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity - Body mass calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700|Raleway:400,500,600,700,800|Lato:400,700,900" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></div>
+    </div>
+    <!--  end Preloader -->
+
+    <div id="main-wrapper">
+      <header>
+        <div id="logo" data-retina="true">
+          <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <a id="menu-button-mobile" href="#"><i class="icon-menu-1"></i></a>
+
+          <nav class="menu_container">
+            <ul class="menu">
+              <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+              <li><a href="about.html" data-en="About" data-ar="معلومات عنا">About</a></li>
+              <li><a href="programs.html" data-en="Programs" data-ar="البرامج">Programs</a></li>
+              <li><a href="pricing.html" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+              <li><a href="blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+              <li><a href="contacts.html" data-en="Contacts" data-ar="اتصل بنا">Contacts</a></li>
+              <li>
+                <select class="language" id="language-switcher">
+                  <option class="language-option" value="en" data-en="English" data-ar="الإنجليزية">English</option>
+                  <option class="language-option" value="ar" data-en="Arabic" data-ar="العربية">Arabic</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="header_shadow"></div>
+      </header>
+
+      <div class="row" id="row-main">
+        <div class="col-lg-6 col-md-5" id="main-img-container">
+          <div id="main-img">
+            <img src="img/01.jpg" alt="" />
+          </div>
+          <!-- End main-img -->
+        </div>
+        <!-- End main-img-container -->
+
+        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <div class="row" id="content-row">
+            <div class="col-md-12">
+              <h1 data-en="Body mass calculator" data-ar="حاسبة مؤشر كتلة الجسم">Body mass calculator</h1>
+              <p class="lead" data-en="BMI is a measure of body fat based on height and weight that applies to adult men and women." data-ar="مؤشر كتلة الجسم هو مقياس للدهون في الجسم بناءً على الطول والوزن وينطبق على الرجال والنساء البالغين.">BMI is a measure of body fat based on height and weight that applies to adult men and women.</p>
+              <p data-en="Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS." data-ar="نص تجريبي لا يحمل أي معنى محدد، يتم استخدامه فقط لتوضيح النصوص في التصاميم.">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+              <hr class="add_bottom_30" />
+
+              <div class="row">
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Weight" placeholder="Weight" data-en="Weight" data-ar="الوزن" />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control col-md-3" name="weight_select" data-en="By Kilo (KG)" data-ar="بالكيلو (كجم)">
+                          <option value="kilo" data-en="By Kilo (KG)" data-ar="بالكيلو (كجم)">By Kilo (KG)</option>
+                          <option value="pounds" data-en="By Pounds" data-ar="بالأرطال">By Pounds</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Height" placeholder="Height" data-en="Height" data-ar="الطول" />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="height_select" data-en="By Centimeters (cm)" data-ar="بالسنتيمتر (سم)">
+                          <option value="cm" data-en="By Centimeters (cm)" data-ar="بالسنتيمتر (سم)">By Centimeters (cm)</option>
+                          <option value="inches" data-en="By Inches" data-ar="بالإنش">By Inches</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <input type="hidden" name="calculator" value="bmi_calculator" />
+                  </form>
+                  <button id="selectBtn" class="button_medium add_top" data-en="Calculate" data-ar="احسب">Calculate</button>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="result">
+                    <h3 data-en="BMI Value for you" data-ar="قيمة مؤشر كتلة الجسم الخاصة بك">BMI Value for you</h3>
+                    <div id="bmi_value">0</div>
+                    <div id="indicator"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- End row -->
+
+              <hr />
+
+              <h3 data-en="The Indication for BMI Range" data-ar="الدلالة لمجموعة مؤشر كتلة الجسم">The Indication for BMI Range</h3>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th data-en="BMI Range" data-ar="نطاق مؤشر كتلة الجسم">BMI Range</th>
+                      <th data-en="Category" data-ar="الفئة">Category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-en="Less than 16.5" data-ar="أقل من 16.5">Less than 16.5</td>
+                      <td data-en="Severely Underweight" data-ar="نقص الوزن الشديد">Severely Underweight</td>
+                    </tr>
+                    <tr>
+                      <td data-en="16.5 - 18.5" data-ar="16.5 - 18.5">16.5 - 18.5</td>
+                      <td data-en="Underweight" data-ar="نقص الوزن">Underweight</td>
+                    </tr>
+                    <tr>
+                      <td data-en="18.5 - 25" data-ar="18.5 - 25">18.5 - 25</td>
+                      <td data-en="Normal" data-ar="طبيعي">Normal</td>
+                    </tr>
+                    <tr>
+                      <td data-en="25 - 30" data-ar="25 - 30">25 - 30</td>
+                      <td data-en="Overweight" data-ar="زيادة الوزن">Overweight</td>
+                    </tr>
+                    <tr>
+                      <td data-en="30+" data-ar="أكثر من 30">30+</td>
+                      <td data-en="Obese" data-ar="سمنة">Obese</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- End table responsive -->
+
+              <h3 data-en="Your block lists" data-ar="قوائمك المحجوزة">Your block lists</h3>
+              <p data-en="Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo." data-ar="نص تجريبي لا يحمل أي معنى محدد، يتم استخدامه فقط لتوضيح النصوص في التصاميم.">Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_1">
+                    <li><a href="#" data-en="Ceteros mediocritatem" data-ar="وسائل الإعلام الأخرى">Ceteros mediocritatem</a></li>
+                    <li><a href="#" data-en="Labore nostrum" data-ar="عملنا">Labore nostrum</a></li>
+                    <li><a href="#" data-en="Primis bonorum" data-ar="أولى المبادئ">Primis bonorum</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_2">
+                    <li><a href="#" data-en="Electram instructior" data-ar="إعداد التعليمات">Electram instructior</a></li>
+                    <li><a href="#" data-en="Electram" data-ar="إلكترام">Electram</a></li>
+                    <li><a href="#" data-en="Melius eruditi" data-ar="تحسين التعليم">Melius eruditi</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End row -->
+
+              <footer>
+                <div class="copyright">
+                  <span> &copy; R Arm CRM system powered by</span>
+                  <a href="https://rarm-crm.com" target="_blank" rel="noopener noreferrer">R Arm CRM</a>
+                  <span> and </span>
+                  <a href="https://xpassionagency.com" target="_blank" rel="noopener noreferrer">Xpassion Advertising Agency</a>
+                </div>
+              </footer>
+            </div>
+            <!-- End col-md-12 -->
+          </div>
+          <!-- End content-row -->
+        </div>
+      </div>
+      <!-- End main-row -->
+    </div>
+    <!-- End main-wrapper  -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="js/calories_calculators.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/transilation.js"></script>
+  </body>
+</html>

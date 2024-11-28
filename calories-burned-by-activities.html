@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity - Calorie Burned by Activities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700|Raleway:400,500,600,700,800|Lato:400,700,900" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></div>
+    </div>
+    <!--  end Preloader -->
+
+    <div id="main-wrapper">
+      <header>
+        <div id="logo" data-retina="true">
+          <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <a id="menu-button-mobile" href="#"><i class="icon-menu-1"></i></a>
+
+          <nav class="menu_container">
+            <ul class="menu">
+              <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+              <li><a href="about.html" data-en="About" data-ar="معلومات عنا">About</a></li>
+              <li><a href="programs.html" data-en="Programs" data-ar="البرامج">Programs</a></li>
+              <li><a href="pricing.html" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+              <li><a href="blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+              <li><a href="contacts.html" data-en="Contacts" data-ar="اتصل بنا">Contacts</a></li>
+              <li>
+                <select class="language" id="language-switcher">
+                  <option class="language-option" value="en" data-en="English" data-ar="الإنجليزية">English</option>
+                  <option class="language-option" value="ar" data-en="Arabic" data-ar="العربية">Arabic</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="header_shadow"></div>
+      </header>
+
+      <div class="row" id="row-main">
+        <div class="col-lg-6 col-md-5" id="main-img-container">
+          <div id="main-img">
+            <img src="img/01.jpg" alt="" />
+          </div>
+          <!-- End main-img -->
+        </div>
+        <!-- End main-img-container -->
+
+        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <div class="row" id="content-row">
+            <div class="col-md-12">
+              <!-- العنوان -->
+              <h1 data-en="Calorie Burned by Activities" data-ar="السعرات الحرارية المحروقة بواسطة الأنشطة">Calorie Burned by Activities</h1>
+
+              <!-- الوصف -->
+              <p class="lead" data-en="Calorie Burned Calculator is used to estimate the number of calories burned after exercises." data-ar="تُستخدم حاسبة السعرات الحرارية لتقدير عدد السعرات المحروقة بعد التمارين.">Calorie Burned Calculator is used to estimate the number of calories burned after exercises.</p>
+
+              <p data-en="Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident." data-ar="نص توضيحي يشرح أهمية الأنشطة الرياضية وحساب السعرات.">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+
+              <hr class="add_bottom_30" />
+
+              <!-- النموذج -->
+              <form>
+                <div class="row">
+                  <!-- إدخال الوزن -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="Weight" class="form-control" placeholder="Weight*" data-en="Weight*" data-ar="الوزن*" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="weight_select">
+                          <option value="kilo" data-en="By Kilo (KG)" data-ar="بالكيلو (كجم)">By Kilo (KG)</option>
+                          <option value="pounds" data-en="By Pounds" data-ar="بالرطل">By Pounds</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- قائمة الأنشطة -->
+                <div id="activies" class="row clearfix">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="hours" data-en="Hours" data-ar="ساعات">
+                        Hours
+                        <input type="text" name="hours_sleep" value="0" />
+                      </div>
+                      <input type="checkbox" name="sleep" id="sleep" />
+                      <label for="sleep" data-en="Sleeping" data-ar="النوم">Sleeping</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="hours" data-en="Hours" data-ar="ساعات">
+                        Hours
+                        <input type="text" name="hours_watchtv" value="0" />
+                      </div>
+                      <input type="checkbox" name="watchtv" id="watchtv" />
+                      <label for="watchtv" data-en="Watching TV" data-ar="مشاهدة التلفاز">Watching TV</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="hours" data-en="Hours" data-ar="ساعات">
+                        Hours
+                        <input type="text" name="hours_destwork" value="0" />
+                      </div>
+                      <input type="checkbox" name="destwork" id="destwork" />
+                      <label for="destwork" data-en="Typing, Writing, Desk Work" data-ar="الكتابة أو العمل المكتبي">Typing, Writing, Desk Work</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="hours" data-en="Hours" data-ar="ساعات">
+                        Hours
+                        <input type="text" name="hours_walking34" value="0" />
+                      </div>
+                      <input type="checkbox" name="walking34" id="walking34" />
+                      <label for="walking34" data-en="Walking 3.4 mph" data-ar="المشي بسرعة 3.4 ميل/ساعة">Walking 3.4 mph</label>
+                    </div>
+                    <div class="form-group">
+                      <div class="hours" data-en="Hours" data-ar="ساعات">
+                        Hours
+                        <input type="text" name="hours_rope_jump" value="0" />
+                      </div>
+                      <input type="checkbox" name="rope_jump" id="rope_jump" />
+                      <label for="rope_jump" data-en="Rope Jumping" data-ar="القفز بالحبل">Rope Jumping</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <!-- زر الحساب -->
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <button id="selectBtn" class="button_medium" data-en="Calculate" data-ar="احسب">Calculate</button>
+                </div>
+              </div>
+
+              <!-- النتيجة -->
+              <div class="result">
+                <h3 data-en="Result for Total calorie burned" data-ar="النتيجة: إجمالي السعرات المحروقة">Result for Total calorie burned</h3>
+                <div id="easy_cal_burned" class="no_margin_bottom" data-en="0.0" data-ar="0.0">0.0</div>
+              </div>
+
+              <!-- الفوتر -->
+              <footer>
+                <div class="copyright">
+                  <span> &copy; R Arm CRM system powered by</span>
+                  <a href="https://rarm-crm.com" target="_blank" rel="noopener noreferrer">R Arm CRM</a>
+                  <span> and </span>
+                  <a href="https://xpassionagency.com" target="_blank" rel="noopener noreferrer">Xpassion Advertising Agency</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End main-row -->
+    </div>
+    <!-- End main-wrapper  -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="js/calories_calculators.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina-replace.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/transilation.js"></script>
+  </body>
+</html>

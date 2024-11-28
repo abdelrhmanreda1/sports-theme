@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity - Daily calories calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700|Raleway:400,500,600,700,800|Lato:400,700,900" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></div>
+    </div>
+    <!--  end Preloader -->
+
+    <div id="main-wrapper">
+      <header>
+        <div id="logo" data-retina="true">
+          <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <a id="menu-button-mobile" href="#"><i class="icon-menu-1"></i></a>
+
+          <nav class="menu_container">
+            <ul class="menu">
+              <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+              <li><a href="about.html" data-en="About" data-ar="معلومات عنا">About</a></li>
+              <li><a href="programs.html" data-en="Programs" data-ar="البرامج">Programs</a></li>
+              <li><a href="pricing.html" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+              <li><a href="blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+          
+              <li><a href="contacts.html" data-en="Contacts" data-ar="اتصل بنا">Contacts</a></li>
+              <li>
+                <select class="language" id="language-switcher">
+                  <option class="language-option" value="en" data-en="English" data-ar="الإنجليزية">English</option>
+                  <option class="language-option" value="ar" data-en="Arabic" data-ar="العربية">Arabic</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="header_shadow"></div>
+      </header>
+
+      <div class="row" id="row-main">
+        <div class="col-lg-6 col-md-5" id="main-img-container">
+          <div id="main-img">
+            <img src="img/01.jpg" alt="" />
+          </div>
+          <!-- End main-img -->
+        </div>
+        <!-- End main-img-container -->
+
+        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <div class="row" id="content-row">
+            <div class="col-md-12">
+              <h1 data-en="Daily calories calculator" data-ar="حاسبة السعرات الحرارية اليومية">Daily calories calculator</h1>
+              <p class="lead" data-en="Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel. Ubique ceteros mediocritatem eos." data-ar="هنا نص توضيحي مختصر، يمكن تخصيصه وفقًا للاحتياجات.">Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel. Ubique ceteros mediocritatem eos.</p>
+              <p data-en="Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS." data-ar="نص إضافي يشرح حاسبة السعرات الحرارية وما الذي يمكن أن تضيفه للمستخدمين.">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+
+              <hr class="add_bottom_30" />
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Age" placeholder="Age (Years)" data-en="Age (Years)" data-ar="العمر (بالسنوات)" />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Weight" placeholder="Weight" data-en="Weight" data-ar="الوزن" />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="weight_select" data-en="By Weight" data-ar="بالوزن">
+                          <option value="kilo" data-en="By Kilo (KG)" data-ar="بالكيلو (كجم)">By Kilo (KG)</option>
+                          <option value="pounds" data-en="By Pounds" data-ar="بالرطل">By Pounds</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="Height" placeholder="Height" data-en="Height" data-ar="الطول" />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="height_select" data-en="By Height" data-ar="بالطول">
+                          <option value="cm" data-en="By Centimeters (cm)" data-ar="بالسنتيمتر">By Centimeters (cm)</option>
+                          <option value="inches" data-en="By Inches" data-ar="بالإنش">By Inches</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group add_top">
+                      <input type="radio" value="Male" name="Male" id="Male" />
+                      <label for="Male" style="margin-right: 30px" data-en="Male" data-ar="ذكر"><span></span>Male</label>
+                      <input type="radio" value="Female" name="Female" id="Female" />
+                      <label for="Female" data-en="Female" data-ar="أنثى"><span></span>Female</label>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="styled-select">
+                        <select class="form-control" name="exercise_level" data-en="Activity Level" data-ar="مستوى النشاط">
+                          <option value="nospec" data-en="None (stay in bed all day)" data-ar="بدون نشاط (البقاء في السرير طوال اليوم)">None (stay in bed all day)</option>
+                          <option value="sedentary" data-en="Sedentariness (very little)" data-ar="الخمول (نشاط قليل جداً)">Sedentariness (very little)</option>
+                          <option value="light" data-en="Light (1 to 3 days per week)" data-ar="نشاط خفيف (1 إلى 3 أيام في الأسبوع)">Light (1 to 3 days per week)</option>
+                          <option value="moderate" data-en="Moderate (3 to 5 days per week)" data-ar="نشاط معتدل (3 إلى 5 أيام في الأسبوع)">Moderate (3 to 5 days per week)</option>
+                          <option value="hard" data-en="Hard (6 days per week)" data-ar="نشاط مكثف (6 أيام في الأسبوع)">Hard (6 days per week)</option>
+                          <option value="nonstop" data-en="Non-Stop (You are Energizer Bunny.)" data-ar="نشاط مستمر (لا يتوقف).">Non-Stop (You are Energizer Bunny.)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <input type="hidden" name="calculator" value="daily_calorie" />
+                  </form>
+                  <button id="selectBtn" class="button_medium add_top" data-en="Calculate" data-ar="احسب">Calculate</button>
+                </div>
+                <!-- End col-md-6 -->
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="result">
+                    <h3 data-en="Your Daily Calories" data-ar="سعراتك الحرارية اليومية">Your Daily Calories</h3>
+                    <div id="your_cal_intake">0.0</div>
+                  </div>
+                  <div class="result">
+                    <h3 data-en="Lowest Daily Calories" data-ar="أقل سعرات حرارية يومية">Lowest Daily Calories</h3>
+                    <div id="bmr_value">0.0</div>
+                  </div>
+                </div>
+                <!-- End col-md-6-->
+              </div>
+              <!-- End row-->
+
+              <hr />
+
+              <h3 data-en="Your block lists" data-ar="قائمة الحظر الخاصة بك">Your block lists</h3>
+              <p data-en="Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo." data-ar="هنا وصف سريع للقائمة الموجودة أدناه.">Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in.</p>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_1">
+                    <li><a href="#" data-en="Ceteros mediocritatem" data-ar="وسطية كيتروس">Ceteros mediocritatem</a></li>
+                    <li><a href="#" data-en="Labore nostrum" data-ar="عملنا">Labore nostrum</a></li>
+                    <li><a href="#" data-en="Primis bonorum" data-ar="فضائل البداية">Primis bonorum</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <ul class="list_2">
+                    <li><a href="#" data-en="Electram instructior" data-ar="التوجيه الكهربائي">Electram instructior</a></li>
+                    <li><a href="#" data-en="Electram" data-ar="الكهربائية">Electram</a></li>
+                    <li><a href="#" data-en="Melius eruditi" data-ar="التعليم المتقدم">Melius eruditi</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End row -->
+
+              <footer>
+                <div class="copyright">
+                  <span> &copy; R Arm CRM system powered by</span>
+                  <a href="https://rarm-crm.com" target="_blank" rel="noopener noreferrer">R Arm CRM</a>
+                  <span> and </span>
+                  <a href="https://xpassionagency.com" target="_blank" rel="noopener noreferrer" data-en="Xpassion Advertising Agency" data-ar="وكالة الإعلانات Xpassion">Xpassion Advertising Agency</a>
+                </div>
+              </footer>
+              <!-- End footer -->
+            </div>
+            <!-- End col-md-12 -->
+          </div>
+          <!-- End content-row -->
+        </div>
+
+        <!-- End col-lg-6-->
+      </div>
+      <!-- End main-row -->
+    </div>
+    <!-- End main-wrapper  -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="js/calories_calculators.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina-replace.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/transilation.js"></script>
+  </body>
+</html>

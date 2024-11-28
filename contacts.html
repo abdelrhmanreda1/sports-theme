@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activity - Calories calculators and sport activity site template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" />
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,700|Raleway:400,500,600,700,800|Lato:400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></div>
+    </div>
+    <!--  end Preloader -->
+
+    <div id="main-wrapper">
+      <header>
+        <div id="logo" data-retina="true">
+          <a href="index.html"><img src="img/logo.png" alt="" data-retina="true" width="160" height="40" /></a>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <a id="menu-button-mobile" href="#"><i class="icon-menu-1"></i></a>
+
+          <nav class="menu_container">
+            <ul class="menu">
+              <li><a href="index.html" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+              <li><a href="about.html" data-en="About" data-ar="معلومات عنا">About</a></li>
+              <li><a href="programs.html" data-en="Programs" data-ar="البرامج">Programs</a></li>
+              <li><a href="pricing.html" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+              <li><a href="blog.html" data-en="Blog" data-ar="المدونة">Blog</a></li>
+
+              <li><a href="contacts.html" class="active-nav" data-en="Contacts" data-ar="اتصل بنا">Contacts</a></li>
+              <li>
+                <select class="language" id="language-switcher">
+                  <option class="language-option" value="en" data-en="English" data-ar="الإنجليزية">English</option>
+                  <option class="language-option" value="ar" data-en="Arabic" data-ar="العربية">Arabic</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="header_shadow"></div>
+      </header>
+
+      <div class="row" id="row-main">
+        <div class="col-lg-6 col-md-5" id="main-img-container">
+          <div id="main-img">
+            <img src="img/01.jpg" alt="" />
+          </div>
+          <!-- End main-img -->
+        </div>
+        <!-- End main-img-container -->
+
+        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <div class="row" id="content-row">
+            <div class="col-md-12">
+              <h1 data-en="Contact Activity" data-ar="نشاط الاتصال">Contact Activity</h1>
+              <p class="lead" data-en="Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in." data-ar="هنا وصف مختصر للنشاط الخاص بالاتصال.">Cu affert populo neglegentur has, labore nostrum periculis ius in, singulis electram ad vel labore nostrum periculis ius in.</p>
+
+              <hr />
+              <div id="message-contact"></div>
+              <form method="post" action="assets/contact.php" id="contactform">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control required" id="name_contact" name="name_contact" placeholder="Enter Name" data-en="Enter Name" data-ar="ادخل الاسم" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control required" id="lastname_contact" name="lastname_contact" placeholder="Enter Last Name" data-en="Enter Last Name" data-ar="ادخل اسم العائلة" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="email" id="email_contact" name="email_contact" class="form-control required email" placeholder="Enter Email" data-en="Enter Email" data-ar="ادخل البريد الإلكتروني" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="Enter Phone number" data-en="Enter Phone number" data-ar="ادخل رقم الهاتف" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea rows="5" id="message_contact" name="message_contact" class="form-control required" placeholder="Write your message" style="height: 200px" data-en="Write your message" data-ar="اكتب رسالتك"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" id="verify_contact" class="form-control" placeholder="Are you human? 3 + 1 =" data-en="Are you human? 3 + 1 =" data-ar="هل أنت إنسان؟ 3 + 1 =" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="submit" value="Submit" class="button_medium" id="submit-contact" data-en="Submit" data-ar="إرسال" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <footer>
+                <div class="copyright">
+                  <span> &copy; R Arm CRM system powered by</span>
+                  <a href="https://rarm-crm.com" target="_blank" rel="noopener noreferrer">R Arm CRM</a>
+                  <span> and </span>
+                  <a href="https://xpassionagency.com" target="_blank" rel="noopener noreferrer" data-en="Xpassion Advertising Agency" data-ar="وكالة الإعلانات Xpassion">Xpassion Advertising Agency</a>
+                </div>
+                <ul id="contact_follow" style="list-style: none; padding: 0; display: flex; justify-content: center; align-items: center; gap: 10px">
+                  <li>
+                    <a href="#" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Facebook">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Google Plus">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                </ul>
+              </footer>
+              <!-- End footer -->
+            </div>
+            <!-- End col-md-12 -->
+          </div>
+          <!-- End content-row -->
+        </div>
+
+        <!-- End col-lg-6-->
+      </div>
+      <!-- End main-row -->
+    </div>
+    <!-- End main-wrapper  -->
+
+    <!-- JQUERY -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- OTHER JS -->
+    <script src="js/calories_calculators.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina-replace.min.js"></script>
+    <script src="assets/validate.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/transilation.js"></script>
+  </body>
+</html>
